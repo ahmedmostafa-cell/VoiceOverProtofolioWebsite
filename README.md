@@ -50,6 +50,6 @@ Mr Mohamed Qassem Voice Over Website Website is designed to be intuitive and eas
 We welcome contributions from the community to improve our Dating App. If you'd like to contribute, please follow these guidelines:
 
 - Check out the [contribution guidelines](CONTRIBUTING.md) for details on how to get started.
-- Report any issues or suggest new features by creating [GitHub Issues](https://github.com/ahmedmostafa-cell/MyProtofolioWebsite/issues).
+- Report any issues or suggest new features by creating [GitHub Issues](https://github.com/ahmedmostafa-cell/VoiceOverProtofolioWebsite/issues).
 
 
