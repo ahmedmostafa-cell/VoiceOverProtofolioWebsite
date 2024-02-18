@@ -1,0 +1,31 @@
+﻿<div class="row">
+    <div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+        <div class="contact_form">
+            <form asp-controller="Home" asp-action="SendMessage" role="form" method="post">
+                <div class="row">
+                    <div class="col col-d-6 col-t-6 col-m-12">
+                        <div class="group-val">
+                            <input type="text" name="name" placeholder="Full Name" />
+                        </div>
+                    </div>
+                    <div class="col col-d-6 col-t-6 col-m-12">
+                        <div class="group-val">
+                            <input type="text" name="email" placeholder="Email Address" />
+                        </div>
+                    </div>
+                    <div class="col col-d-12 col-t-12 col-m-12">
+                        <div class="group-val">
+                            <textarea name="message" placeholder="Your Message"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="submit" value="Send Message" class="btn btn-dark btn-modern w-100 text-uppercase bg-color-hover-primary border-color-hover-primary border-radius-0 text-3 py-3" />
+            </form>
+            <div class="alert-success">
+                <p>Thanks, your message is sent successfully.</p>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>

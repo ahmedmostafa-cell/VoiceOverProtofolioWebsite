@@ -1,0 +1,1591 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--
+        Basic
+    -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>KassemVoice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="vCard & Resume Template" />
+    <meta name="keywords" content="vcard, resposnive, resume, personal, card, cv, cards, portfolio" />
+    <meta name="author" content="beshleyua" />
+
+    <!--
+        Load Fonts
+    -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+
+    <!--
+        Load CSS
+    -->
+    <link rel="stylesheet" href="~/css/basic.css" />
+    <link rel="stylesheet" href="~/css/layout.css" />
+    <link rel="stylesheet" href="~/css/blogs.css" />
+    <link rel="stylesheet" href="~/css/ionicons.css" />
+    <link rel="stylesheet" href="~/css/magnific-popup.css" />
+    <link rel="stylesheet" href="~/css/animate.css" />
+    <link rel="stylesheet" href="~/css/owl.carousel.css" />
+
+    <!--
+        Background Gradient
+    -->
+    <link rel="stylesheet" href="~/css/gradient.css" />
+    <!--
+        Template New-Skin
+    -->
+    <link rel="stylesheet" href="~/css/new-skin/new-skin.css" />
+
+    <!--
+        Template RTL
+    -->
+    <link rel="stylesheet" href="~/css/rtl-new.css" />
+
+    <!--
+        Template Colors
+    -->
+    <link rel="stylesheet" href="~/css/demos/demo-7-colors.css" />
+    <!--<link rel="stylesheet" href="css/template-colors/blue.css" />-->
+    <!--<link rel="stylesheet" href="css/template-colors/orange.css" />-->
+    <!--<link rel="stylesheet" href="css/template-colors/pink.css" />-->
+    <!--<link rel="stylesheet" href="css/template-colors/purple.css" />-->
+    <!--<link rel="stylesheet" href="css/template-colors/red.css" />-->
+    <!--
+        Template Dark
+
+    -->
+    <link rel="stylesheet" href="~/css/new-skin/classic-skin.css" />
+    <link rel="stylesheet" href="~/css/template-dark/dark.css" />
+    <!--<link rel="stylesheet" href="css/template-dark/dark.css" />-->
+    <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--
+        Favicons
+    -->
+    <link rel="shortcut icon" href="~/images/favicons/favicon.jpeg">
+    <style>
+        .ahmed {
+            border: 5px solid #555;
+        }
+
+        .background {
+            background-color: #d8dbe2;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="page new-skin">
+
+        <!-- preloader -->
+        <div class="preloader">
+            <div class="centrize full-width">
+                <div class="vertical-center">
+                    <div class="spinner">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- background -->
+        <div class="background" style="background-color: #d8dbe2;"></div>
+
+        <!--
+            Container
+        -->
+        <div class="container opened" data-animation-in="fadeInRight" data-animation-out="fadeOutRight">
+            @*<img class="ahmed" style="width:100px; position:fixed; left:-100px;" src="/images/WhatsApp Image 2021-12-10 at 10.31.16 AM.jpeg">*@
+            <!--
+                Header
+            -->
+            <header class="header">
+                <!-- header profile -->
+                @*<div class="profile">
+                        <div class="title">ريان ادلارد</div>
+                        <div class="subtitle subtitle-typed">
+                            <div class="typing-title">
+                                <p>Writer</p>
+                                <p>Author</p>
+                                <p>Blogger</p>
+                            </div>
+                        </div>
+                    </div>*@
+                <!-- menu btn -->
+                <!--<a href="#" class="menu-btn"><span></span></a>-->
+                <!-- menu -->
+                <div class="top-menu">
+                    <ul>
+                        <li class="active">
+                            <a href="#about-card">
+                                <span class="icon ion-person"></span>
+                                <span class="link">حول</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Home" asp-action="Index">
+                                <span class="icon ion-android-list"></span>
+                                <span class="link">النسخة الانجليزي</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#works-card">
+                                <span class="icon ion-paintbrush"></span>
+                                <span class="link">أعمال</span>
+                            </a>
+                        </li>
+                        @*<li>
+                                <a href="#blog-card">
+                                    <span class="icon ion-chatbox-working"></span>
+                                    <span class="link">مدونة</span>
+                                </a>
+                            </li>*@
+                        <li>
+                            <a href="#contacts-card">
+                                <span class="icon ion-at"></span>
+                                <span class="link">اتصل</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </header>
+
+            <!--
+                Card - Started
+            -->
+            <div class="card-started" id="home-card">
+
+                <!--
+                    Profile
+                -->
+                <div class="profile no-photo" style="align-items:center">
+
+                    <!-- profile image -->
+                    <div class="slide">
+                        <img id="myForm" style="width:100%; height:100%" src="~/images/mohamedqassemmm.jpg" />
+                    </div>
+
+                    <!-- profile titles -->
+                    <div class="title">محمد قاسم عرفة</div>
+                    <div class="subtitle">معلق صوتي</div>
+
+
+
+                    <!-- profile socials -->
+                    <div class="social">
+                        <a href="https://wa.me/00201033927725" target="_blank">
+                            <span class="fa fa-whatsapp" style="color: #075e54; font-weight: bolder;"></span>
+                        </a>
+                        <a target="_blank" href="https://twitter.com/">
+                            <span class="fa fa-twitter" style="color: #00acee; font-weight: bolder;"></span>
+                        </a>
+                        <a target="_blank" href="https://www.facebook.com/mohamed.kassem.1023">
+                            <span class="fa fa-facebook-f" style="color:#3b5998; font-weight:bolder;"></span>
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/mohamed-kassem-arafa-66796889">
+                            <span class="fa fa-linkedin" style="color: #0077b5; font-weight: bolder;"></span>
+                        </a>
+                    </div>
+
+                    <!-- profile buttons -->
+                    @*<div class="lnks">
+            <a href="#" class="lnk">
+                <span class="text">تحميل السيرة الذاتية</span>
+                <span class="ion ion-archive"></span>
+            </a>
+            <a href="#" class="lnk discover">
+                <span class="text">اتصل بي</span>
+                <span class="arrow"></span>
+            </a>
+        </div>*@
+
+                </div>
+
+            </div>
+
+            <!--
+                Card - About
+            -->
+            <div class="card-inner animated active" id="about-card">
+                <div class="card-wrap">
+
+                    <!--
+                        About
+                    -->
+                    <div class="content about">
+
+                        <!-- title -->
+                        <div class="title">عني</div>
+
+                        <!-- content -->
+                        <div class="row">
+                            <div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+                                <div class="text-box">
+                                    <p>
+                                        انا محمد قاسم عرفة ، معلق صوتي مصري  ، يتمتع بنبرة دافئة وودية وعميقة ، معلق صوتي مستقل يقدم خدمات نقل الصوت للعملاء المستقلين باللغات العربية والإنجليزية والفرنسية للإعلانات التليفزيونية. التسجيلات وكذلك الرد الصوتي التفاعلي
+
+                                    </p>
+                                    <p>
+
+                                        لقد عمل لمدة 6 سنوات لتطوير صوت قوي ونقي والتحدث بإلقاء واضح وبراعة للتكيف مع كل مشروع فردي وإنتاج صوت بجودة البث مع تحول سريع.
+                                    </p>
+                                </div>
+                            </div>
+                            @*<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+                                    <div class="info-list">
+                                        <ul>
+                                            <li>
+                                                <audio controls autobuffer="autobuffer" title="Ahmed">
+                                                    <source src='~/images/file_example_MP3_700KB.mp3' />
+                                                </audio>
+                                            </li>
+                                            <br />
+                                            <li>
+                                                <audio controls autobuffer="autobuffer" title="Ahmed">
+                                                    <source src='~/images/file_example_MP3_700KB.mp3' />
+                                                </audio>
+                                            </li>
+                                            <br />
+                                            <li>
+                                                <audio controls autobuffer="autobuffer" title="Ahmed">
+                                                    <source src='~/images/file_example_MP3_700KB.mp3' />
+                                                </audio>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>*@
+                        </div>
+
+                    </div>
+
+                    <!--
+                        Services
+                    -->
+                    <div class="content services">
+
+                        <!-- title -->
+                        <div class="title">خدماتي</div>
+
+                        <!-- content -->
+                        <div class="row service-items border-line-v">
+
+                            <!-- service item -->
+                            <div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+                                <div class="service-item">
+                                    <div class="icon"><span class="ion ion-code"></span></div>
+                                    <div class="name">تطوير الشبكة</div>
+                                    <p>
+                                        موقع إلكتروني حديث وجاهز يساعدك
+                                        الوصول إلى كل التسويق الخاص بك.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- service item -->
+                            <div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+                                <div class="service-item">
+                                    <div class="icon"><span class="ion ion-music-note"></span></div>
+                                    <div class="name">الكتابة الموسيقية</div>
+                                    <p>
+                                        نسخ الموسيقى والنسخ والترتيب والتكوين.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- service item -->
+                            <div class="col col-d-6 col-t-6 col-m-12">
+                                <div class="service-item">
+                                    <div class="icon"><span class="ion ion-speakerphone"></span></div>
+                                    <div class="name">إعلان</div>
+                                    <p>
+                                        وتشمل الخدمات الإعلانية التلفزيون والراديو والطباعة والبريد والويب.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- service item -->
+                            <div class="col col-d-6 col-t-6 col-m-12">
+                                <div class="service-item">
+                                    <div class="icon"><span class="ion ion-ios-game-controller-b"></span></div>
+                                    <div class="name">تطوير اللعبة</div>
+                                    <p>
+                                        تطوير الروبوت المحمول لا تنسى وفريدة من نوعها ، ألعاب ios.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>
+
+                    <!--
+                        Price Tables
+                    -->
+                    <!--<div class="content pricing">-->
+                    <!-- title -->
+                    <!--<div class="title">التسعير</div>-->
+                    <!-- content -->
+                    <!--<div class="row pricing-items">-->
+                    <!-- pricing item -->
+                    <!--<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+                        <div class="pricing-item">
+                            <div class="icon"><i class="ion ion-speedometer speed-basic"></i></div>
+                            <div class="name">الأساسية</div>
+                            <div class="amount">
+                                <span class="dollar">$</span>
+                                <span class="number">22</span>
+                                <span class="period">ساعة</span>
+                            </div>
+                            <div class="feature-list">
+                                <ul>
+                                    <li>تطوير الشبكة</li>
+                                    <li>إعلان</li>
+                                    <li>تطوير اللعبة</li>
+                                    <li class="disable">الكتابة الموسيقية</li>
+                                    <li class="disable">التصوير <strong>الجديد</strong></li>
+                                </ul>
+                            </div>
+                            <div class="lnks">
+                                <a href="#" class="lnk">
+                                    <span class="text">شراء الأساسية</span>
+                                    <i class="ion ion-speedometer speed-basic"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>-->
+                    <!-- pricing item -->
+                    <!--<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+                                <div class="pricing-item">
+                                    <div class="icon"><i class="ion ion-speedometer"></i></div>
+                                    <div class="name">طليعة</div>
+                                    <div class="amount">
+                                        <span class="dollar">$</span>
+                                        <span class="number">48</span>
+                                        <span class="period">ساعة</span>
+                                    </div>
+                                    <div class="feature-list">
+                                        <ul>
+                                            <li>تطوير الشبكة</li>
+                                            <li>إعلان</li>
+                                            <li>تطوير اللعبة</li>
+                                            <li>الكتابة الموسيقية</li>
+                                            <li>التصوير <strong>الجديد</strong></li>
+                                        </ul>
+                                    </div>
+                                    <div class="lnks">
+                                        <a href="#" class="lnk">
+                                            <span class="text">شراء برو</span>
+                                            <i class="ion ion-speedometer"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>-->
+                    <!--
+                        Skills
+                    -->
+                    <!--<div class="content skills">-->
+                    <!-- title -->
+                    <!--<div class="title">اللغات</div>-->
+                    <!-- content -->
+                    <!--<div class="row">-->
+                    <!-- skill item -->
+                    <!--<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+                                <div class="skills-list">
+                                    <div class="skill-title border-line-h">
+                                        <div class="icon"><i class="ion ion-easel"></i></div>
+                                        <div class="name">اللغات</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border-line-h">
+                                            <div class="name">ايطالي</div>
+                                            <div class="progress">
+                                                <div class="percentage" style="width:90%;"></div>
+                                            </div>
+                                        </li>
+                                        <li class="border-line-h">
+                                            <div class="name">الانجليزي </div>
+                                            <div class="progress">
+                                                <div class="percentage" style="width:65%;"></div>
+                                            </div>
+                                        </li>
+                                        <li class="border-line-h">
+                                            <div class="name"> الفرنسى</div>
+                                            <div class="progress">
+                                                <div class="percentage" style="width:75%;"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="name"> الالمانية</div>
+                                            <div class="progress">
+                                                <div class="percentage" style="width:85%;"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>-->
+                    <!--
+                        Clients
+                    -->
+                    <div class="content clients">
+
+                        <!-- title -->
+                        <div class="title">عملاء</div>
+
+                        <!-- content -->
+                        <div class="row client-items">
+
+                            <!-- client item -->
+                            <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                                <div class="client-item">
+                                    <div class="image">
+                                        <a target="_blank" href="https://www.google.com">
+                                            <img style="opacity:50;" src="~/images/WhatsApp Image 2021-12-19 at 9.46.25 AM.jpeg" alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- client item -->
+                            <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                                <div class="client-item">
+                                    <div class="image">
+                                        <a target="_blank" href="https://www.google.com">
+                                            <img style="opacity:50;" src="~/images/WhatsApp Image 2021-12-19 at 9.47.06 AM.jpeg" alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- client item -->
+                            <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                                <div class="client-item">
+                                    <div class="image">
+                                        <a target="_blank" href="https://www.google.com">
+                                            <img style="opacity:50;" src="~/images/WhatsApp Image 2021-12-19 at 9.47.26 AM.jpeg" alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- client item -->
+                            <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                                <div class="client-item">
+                                    <div class="image">
+                                        <a target="_blank" href="https://www.google.com">
+                                            <img style="opacity:50;" src="~/images/WhatsApp Image 2021-12-19 at 9.48.36 AM.jpeg" alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                                <div class="client-item">
+                                    <div class="image">
+                                        <a target="_blank" href="https://www.google.com">
+                                            <img style="opacity:50;" src="~/images/WhatsApp Image 2021-12-19 at 9.49.35 AM.jpeg" alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                                <div class="client-item">
+                                    <div class="image">
+                                        <a target="_blank" href="https://www.google.com">
+                                            <img style="opacity:50;" src="~/images/WhatsApp Image 2021-12-19 at 9.50.32 AM.jpeg" alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                                <div class="client-item">
+                                    <div class="image">
+                                        <a target="_blank" href="https://www.google.com">
+                                            <img style="opacity:50;" src="~/images/WhatsApp Image 2021-12-19 at 9.52.36 AM.jpeg" alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                                <div class="client-item">
+                                    <div class="image">
+                                        <a target="_blank" href="https://www.google.com">
+                                            <img style="opacity:50;" src="~/images/WhatsApp Image 2021-12-19 at 9.53.17 AM.jpeg" alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="content testimonials">
+
+                        <!-- title -->
+                        <div class="title">التعليقات</div>
+
+                        <!-- content -->
+                        <div class="row border-line-v">
+                            <div class="col col-m-12 col-t-12 col-d-12">
+                                <div class="post-box">
+
+                                    <!-- comments items -->
+                                    <div class="col-md-12">
+                                        <ul class="post-comments">
+
+                                            <!-- comment item -->
+                                            <li>
+                                                <img src="images/man1.jpg" alt="">
+                                                <div class="comment-info">
+                                                    <div class="name">
+                                                        <h6>فلان الفلاني <span>منذ 1 ساعة</span></h6>
+                                                        <a href="#">الرد</a>
+                                                    </div>
+                                                    <p>
+                                                        أبقى في إرسال أعطى أشعر أنه سوف نحن. لديه متعة شراء الرجال
+                                                        يضحك مصاريع.
+                                                    </p>
+                                                </div>
+                                            </li>
+
+                                            <!-- comment item -->
+                                            <li>
+                                                <img src="images/man1.jpg" alt="">
+                                                <div class="comment-info">
+                                                    <div class="name">
+                                                        <h6>فلان الفلاني <span>منذ 1 ساعة</span></h6>
+                                                        <a href="#">الرد</a>
+                                                    </div>
+                                                    <p>
+                                                        أبقى في إرسال أعطى أشعر أنه سوف نحن. لديه متعة شراء الرجال
+                                                        يضحك مصاريع.
+                                                    </p>
+                                                </div>
+                                            </li>
+
+                                            <!-- comment item -->
+                                            <li>
+                                                <img src="images/man1.jpg" alt="">
+                                                <div class="comment-info">
+                                                    <div class="name">
+                                                        <h6>فلان الفلاني <span>منذ 1 ساعة</span></h6>
+                                                        <a href="#">الرد</a>
+                                                    </div>
+                                                    <p>
+                                                        أبقى في إرسال أعطى أشعر أنه سوف نحن. لديه متعة شراء الرجال
+                                                        يضحك مصاريع.
+                                                    </p>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!--
+                Card - Resume
+            -->
+            <div class="card-inner" id="resume-card">
+                <div class="card-wrap">
+
+                    <!--
+                        Resume
+                    -->
+                    <!--<div class="content resume">-->
+                    <!-- title -->
+                    <!--<div class="title">استئنف</div>-->
+                    <!-- content -->
+                    <!--<div class="row">-->
+                    <!-- experience -->
+                    <!--<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+                        <div class="resume-title border-line-h">
+                            <div class="icon"><i class="ion ion-briefcase"></i></div>
+                            <div class="name">تجربة</div>
+                        </div>
+                        <div class="resume-items">
+                            <div class="resume-item border-line-h active">
+                                <div class="date">2013 - حتى الآن</div>
+                                <div class="name">مدير فني</div>
+                                <div class="company">Facebook Inc.</div>
+                                <p>
+                                    التعاون مع فرق التطوير والإبداع في تنفيذ الأفكار.
+                                </p>
+                            </div>
+                            <div class="resume-item border-line-h">
+                                <div class="date">2011 - 2012</div>
+                                <div class="name">المطور الأمامي</div>
+                                <div class="company">Google Inc.</div>
+                                <p>
+                                    مراقبة الجوانب الفنية لعملية التسليم الأمامية للعديد من المشاريع.
+                                </p>
+                            </div>
+                            <div class="resume-item">
+                                <div class="date">2009 - 2010</div>
+                                <div class="name">مطور خبير</div>
+                                <div class="company">Abc Inc.</div>
+                                <p>
+                                    تحسين أداء موقع الويب باستخدام أحدث التقنيات.
+                                </p>
+                            </div>
+                        </div>
+                    </div>-->
+                    <!-- education -->
+                    <!--<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+                                <div class="resume-title border-line-h">
+                                    <div class="icon"><i class="ion ion-university"></i></div>
+                                    <div class="name">التعليم</div>
+                                </div>
+                                <div class="resume-items">
+                                    <div class="resume-item border-line-h">
+                                        <div class="date">2006 - 2008</div>
+                                        <div class="name">جامعة الفن</div>
+                                        <div class="company">نيويورك</div>
+                                        <p>
+                                            درجة البكالوريوس في علوم الكمبيوتر معهد ABC التقني ، جيفرسون ، ميسوري
+                                        </p>
+                                    </div>
+                                    <div class="resume-item border-line-h">
+                                        <div class="date">2005 - 2006</div>
+                                        <div class="name">دورة البرمجة</div>
+                                        <div class="company">باريس</div>
+                                        <p>
+                                            الدورات الدراسية - Git و WordPress و Javascript و iOS و Android.
+                                        </p>
+                                    </div>
+                                    <div class="resume-item">
+                                        <div class="date">2004 - 2005</div>
+                                        <div class="name">دورة تصميم الويب</div>
+                                        <div class="company">لندن</div>
+                                        <p>
+                                            تحويل تصميمات Photoshop إلى صفحات الويب باستخدام HTML و CSS وجافا سكريبت
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>-->
+                    <!--
+                        Skills
+                    -->
+                    <!--<div class="content skills">-->
+                    <!-- title -->
+                    <!--<div class="title">مهاراتي</div>-->
+                    <!-- content -->
+                    <!--<div class="row">-->
+                    <!-- skill item -->
+                    <!--<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+                        <div class="skills-list">
+                            <div class="skill-title border-line-h">
+                                <div class="icon"><i class="ion ion-easel"></i></div>
+                                <div class="name">التصميم</div>
+                            </div>
+                            <ul>
+                                <li class="border-line-h">
+                                    <div class="name">تصميم الويب</div>
+                                    <div class="progress">
+                                        <div class="percentage" style="width:90%;"></div>
+                                    </div>
+                                </li>
+                                <li class="border-line-h">
+                                    <div class="name">اكتب الموسيقى</div>
+                                    <div class="progress">
+                                        <div class="percentage" style="width:65%;"></div>
+                                    </div>
+                                </li>
+                                <li class="border-line-h">
+                                    <div class="name">محل تصوير</div>
+                                    <div class="progress">
+                                        <div class="percentage" style="width:75%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="name">التصميم الجرافيكي</div>
+                                    <div class="progress">
+                                        <div class="percentage" style="width:85%;"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>-->
+                    <!-- skill item -->
+                    <!--<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+                                <div class="skills-list">
+                                    <div class="skill-title border-line-h">
+                                        <div class="icon"><i class="ion ion-code"></i></div>
+                                        <div class="name">الترميز</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border-line-h">
+                                            <div class="name">WordPress</div>
+                                            <div class="progress">
+                                                <div class="percentage" style="width:85%;"></div>
+                                            </div>
+                                        </li>
+                                        <li class="border-line-h">
+                                            <div class="name">PHP / MYSQL</div>
+                                            <div class="progress">
+                                                <div class="percentage" style="width:65%;"></div>
+                                            </div>
+                                        </li>
+                                        <li class="border-line-h">
+                                            <div class="name">Angular / JavaScript</div>
+                                            <div class="progress">
+                                                <div class="percentage" style="width:75%;"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="name">HTML / CSS</div>
+                                            <div class="progress">
+                                                <div class="percentage" style="width:90%;"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>-->
+
+                </div>
+            </div>
+
+            <!--
+                Card - Works
+            -->
+            <div class="card-inner" id="works-card">
+                <div class="card-wrap">
+
+                    <!--
+                        Works
+                    -->
+                    <div class="content works">
+
+                        <!-- title -->
+                        <div class="title">الأعمال الأخيرة</div>
+
+                        <!-- filters -->
+                        <div class="filter-menu filter-button-group">
+                            <div class="f_btn active">
+                                <label><input type="radio" name="fl_radio" value="grid-item" />الكل</label>
+                            </div>
+                            <div class="f_btn">
+                                <label><input type="radio" name="fl_radio" value="photo" />ديمو</label>
+                            </div>
+                            <div class="f_btn">
+                                <label><input type="radio" name="fl_radio" value="video" />فيديو</label>
+                            </div>
+                            @*<div class="f_btn">
+                                    <label><input type="radio" name="fl_radio" value="music" />موسيقى</label>
+                                </div>*@
+                            @*<div class="f_btn">
+                                    <label><input type="radio" name="fl_radio" value="design" />صور فوتوغرافية</label>
+                                </div>*@
+                        </div>
+
+                        <!-- content -->
+                        <div class="row grid-items border-line-v">
+
+                            <!-- work item photo -->
+
+                            <div class="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
+                                <div class="box-item">
+                                    <div class="image">
+                                        <audio controls autobuffer="autobuffer" title="Ahmed">
+                                            <source src='~/images/file_example_MP3_700KB.mp3' />
+                                        </audio>
+                                    </div>
+                                    <div class="desc">
+                                        <a href="images/works/work1.jpg" class="name has-popup-image">خوذة دراجة نارية</a>
+                                        <div class="category">ديمو</div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                            <!-- work item video -->
+                            <div class="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h">
+                                <div class="box-item">
+                                    <div class="image">
+                                        <a href="~/images/VID-20211223-WA0055.mp4" class="has-popup-video">
+                                            <img src="~/images/dev.PNG" alt="" />
+                                            <span class="info">
+                                                <span class="ion ion-videocamera"></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="desc">
+                                        <a href="~/images/VID-20211223-WA0055.mp4" class="name has-popup-video">Dev One Company</a>
+                                        <div class="category">Video</div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h">
+                                <div class="box-item">
+                                    <div class="image">
+                                        <a href="~/images/VID-20211223-WA0052.mp4" class="has-popup-video">
+                                            <img src="~/images/egymac.PNG" alt="" />
+                                            <span class="info">
+                                                <span class="ion ion-videocamera"></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="desc">
+                                        <a href="~/images/VID-20211223-WA0052.mp4" class="name has-popup-video"> Egymac Company</a>
+                                        <div class="category">Video</div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h">
+                                <div class="box-item">
+                                    <div class="image">
+                                        <a href="~/images/VID-20211223-WA0054.mp4" class="has-popup-video">
+                                            <img src="~/images/smouha.PNG" alt="" />
+                                            <span class="info">
+                                                <span class="ion ion-videocamera"></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="desc">
+                                        <a href="~/images/VID-20211223-WA0054.mp4" class="name has-popup-video">  Smouha Club</a>
+                                        <div class="category">Video</div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h">
+                                <div class="box-item">
+                                    <div class="image">
+                                        <a href="~/images/VID-20211223-WA0053.mp4" class="has-popup-video">
+                                            <img src="~/images/arab.PNG" alt="" />
+                                            <span class="info">
+                                                <span class="ion ion-videocamera"></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="desc">
+                                        <a href="~/images/VID-20211223-WA0053.mp4" class="name has-popup-video">  Arab Business Company</a>
+                                        <div class="category">Video</div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h">
+                                <div class="box-item">
+                                    <div class="image">
+                                        <a href="https://www.instagram.com/kassemious/p/CMlJ83bFZcu/?utm_medium=share_sheet" target="_blank">
+                                            <img src="~/images/arab.PNG" alt="" />
+                                            <span class="info">
+                                                <span class="ion ion-videocamera"></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="desc">
+                                        <a href="https://www.instagram.com/kassemious/p/CMlJ83bFZcu/?utm_medium=share_sheet" target="_blank">  Arab Business Company</a>
+                                        <div class="category">Video</div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h">
+                                <div class="box-item">
+                                    <div class="image">
+                                        <a href="https://www.instagram.com/p/CMlMDwyFO6Y/?utm_medium=share_sheet" target="_blank">
+                                            <img src="~/images/elite.PNG" alt="" />
+                                            <span class="info">
+                                                <span class="ion ion-videocamera"></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="desc">
+                                        <a href="https://www.instagram.com/p/CMlMDwyFO6Y/?utm_medium=share_sheet" target="_blank">   Elite Hospital</a>
+                                        <div class="category">Video</div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h">
+                                <div class="box-item">
+                                    <div class="image">
+                                        <a href="https://www.instagram.com/p/COBFgsylVE-/" target="_blank">
+                                            <img src="~/images/krombo.PNG" alt="" />
+                                            <span class="info">
+                                                <span class="ion ion-videocamera"></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="desc">
+                                        <a href="https://www.instagram.com/p/COBFgsylVE-/" target="_blank">   Elite Hospital</a>
+                                        <div class="category">Video</div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+                            <!-- work item music -->
+                            @*<div class="col col-d-6 col-t-6 col-m-12 grid-item music border-line-h">
+                                                <div class="box-item">
+                                                    <div class="image">
+                                    <a href="https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&show_artwork=true" class="has-popup-music">
+                                        <img src="~/images/works/work3.jpg" alt="" />
+                                        <span class="info">
+                                            <span class="ion ion-music-note"></span>
+                                        </span>
+                                    </a>
+                                </div>
+                                                    <div class="desc">
+                                    <a href="#" class="name has-popup">سلم</a>
+                                    <div class="category">موسيقى</div>
+                                </div>
+                                                </div>
+                                            </div>*@
+
+                            <!-- work item design -->
+                            <!-- work item photo -->
+                            @*<div class="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
+                                                <div class="box-item">
+                                                    <div class="image">
+                                    <a href="images/works/work5.jpg" class="has-popup-image">
+                                        <img src="~/images/works/work5.jpg" alt="" />
+                                        <span class="info">
+                                            <span class="ion ion-image"></span>
+                                        </span>
+                                    </a>
+                                </div>
+                                                    <div class="desc">
+                                    <a href="images/works/work5.jpg" class="name has-popup-image">سفريات عامة</a>
+                                    <div class="category">صورة فوتوغرافية</div>
+                                </div>
+                                                </div>
+                                            </div>*@
+
+                            <!-- work item music -->
+                            <div class="col col-d-6 col-t-6 col-m-12 grid-item music border-line-h">
+                                <div class="box-item">
+                                    @*<div class="image">
+                                            <a href="https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&show_artwork=true" class="has-popup-music">
+                                                <img src="~/images/works/work8.jpg" alt="" />
+                                                <span class="info">
+                                                    <span class="ion ion-music-note"></span>
+                                                </span>
+                                            </a>
+                                        </div>*@
+                                    @*<div class="desc">
+                                            <a href="#" class="name has-popup">مدخل ضوء النهار</a>
+                                            <div class="category">موسيقى</div>
+                                        </div>*@
+                                </div>
+                            </div>
+
+
+
+                            <!-- work item design -->
+                            @*<div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
+                                    <div class="box-item">
+                                        <div class="image">
+                                            <a href="#popup-2" class="has-popup-media">
+                                                <img src="~/images/mohamed2.jpeg" alt="" />
+                                                <span class="info">
+                                                    <span class="ion ion-images"></span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="desc">
+                                            <a href="#popup-2" class="name has-popup-media">موقع اجتماعي</a>
+                                            <div class="category">التصميم</div>
+                                        </div>
+                                        <div id="popup-2" class="popup-box mfp-fade mfp-hide">
+                                            <div class="content">
+                                                <div class="image">
+                                                    <img src="~/images/mohamed2.jpeg" alt="">
+                                                </div>
+                                                <div class="desc">
+                                                    <div class="post-box">
+                                                        <h1>تطبيق المحمول</h1>
+                                                        <div class="blog-detail">التصميم</div>
+                                                        <div class="blog-content">
+                                                            <p>
+                                                                لذلك ضرب من لقيت حلها. شمالا عن طريق وصفها حتى المنزلية لذلك
+                                                                انتباه. التفوق بشكل حاسم حتى الآن رجل الانطباع لمنافسة بشكل ملحوظ.
+                                                            </p>
+                                                            <p>
+                                                                مصادرة كنت منكرة ولكن مثلي في بعض الأحيان شرح. آخر كما درسته للواضحة.
+                                                                بمعنى سعيد نظرا لأنه ينشأ. السلوك في اجابه ازالتها بين. متبق
+                                                                تحديد عدد قليل من اثنين اعترف القدامى.
+                                                            </p>
+                                                            <blockquote>
+                                                                دهش مزعج لحد من التحيز حتى التحيز. صاخبة من المقصود بهم. الموت يعني
+                                                                حتى المدني لا عرض الجرح.
+                                                            </blockquote>
+                                                            <p>
+                                                                يقول القرميد تفسد الآن الجدران يعني البيت. أفكاري اهتمام السيد فرزت من تفوق
+                                                                إزالة. مجتمع مسائي موسيقي بجانب ساكني. تفقد تلة جيدا انه سوف ينتهي.
+                                                                زيادة كل ما يكفي من الرجال له الإعجاب بالجنس غير المجدي.
+                                                            </p>
+                                                            <ul class="list-style">
+                                                                <li>أعظم بشكل صحيح قبالة ممارسة لحم الخنزير جميع.</li>
+                                                                <li>دعوة لا يمكن الاستغناء عن حيازتها أو خارجها.</li>
+                                                                <li>كل صعوبة في تقدير unreserved زيادة الحساسية.</li>
+                                                            </ul>
+                                                            <p>
+                                                                دهش مزعج لحد من التحيز حتى التحيز. صاخبة من المقصود بهم. الموت يعني
+                                                                حتى المدني لا عرض الجرح.
+                                                            </p>
+                                                        </div>
+                                                        <a href="#" class="button">
+                                                            <span class="text">عرض مشروع</span>
+                                                            <span class="arrow"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
+                                    <div class="box-item">
+                                        <div class="image">
+                                            <a href="#popup-2" class="has-popup-media">
+                                                <img src="~/images/mic1.jpg" alt="" />
+                                                <span class="info">
+                                                    <span class="ion ion-images"></span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="desc">
+                                            <a href="#popup-2" class="name has-popup-media">موقع اجتماعي</a>
+                                            <div class="category">التصميم</div>
+                                        </div>
+                                        <div id="popup-2" class="popup-box mfp-fade mfp-hide">
+                                            <div class="content">
+                                                <div class="image">
+                                                    <img src="~/images/mic1.jpg" alt="">
+                                                </div>
+                                                <div class="desc">
+                                                    <div class="post-box">
+                                                        <h1>تطبيق المحمول</h1>
+                                                        <div class="blog-detail">التصميم</div>
+                                                        <div class="blog-content">
+                                                            <p>
+                                                                لذلك ضرب من لقيت حلها. شمالا عن طريق وصفها حتى المنزلية لذلك
+                                                                انتباه. التفوق بشكل حاسم حتى الآن رجل الانطباع لمنافسة بشكل ملحوظ.
+                                                            </p>
+                                                            <p>
+                                                                مصادرة كنت منكرة ولكن مثلي في بعض الأحيان شرح. آخر كما درسته للواضحة.
+                                                                بمعنى سعيد نظرا لأنه ينشأ. السلوك في اجابه ازالتها بين. متبق
+                                                                تحديد عدد قليل من اثنين اعترف القدامى.
+                                                            </p>
+                                                            <blockquote>
+                                                                دهش مزعج لحد من التحيز حتى التحيز. صاخبة من المقصود بهم. الموت يعني
+                                                                حتى المدني لا عرض الجرح.
+                                                            </blockquote>
+                                                            <p>
+                                                                يقول القرميد تفسد الآن الجدران يعني البيت. أفكاري اهتمام السيد فرزت من تفوق
+                                                                إزالة. مجتمع مسائي موسيقي بجانب ساكني. تفقد تلة جيدا انه سوف ينتهي.
+                                                                زيادة كل ما يكفي من الرجال له الإعجاب بالجنس غير المجدي.
+                                                            </p>
+                                                            <ul class="list-style">
+                                                                <li>أعظم بشكل صحيح قبالة ممارسة لحم الخنزير جميع.</li>
+                                                                <li>دعوة لا يمكن الاستغناء عن حيازتها أو خارجها.</li>
+                                                                <li>كل صعوبة في تقدير unreserved زيادة الحساسية.</li>
+                                                            </ul>
+                                                            <p>
+                                                                دهش مزعج لحد من التحيز حتى التحيز. صاخبة من المقصود بهم. الموت يعني
+                                                                حتى المدني لا عرض الجرح.
+                                                            </p>
+                                                        </div>
+                                                        <a href="#" class="button">
+                                                            <span class="text">عرض مشروع</span>
+                                                            <span class="arrow"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
+                                    <div class="box-item">
+                                        <div class="image">
+                                            <a href="#popup-2" class="has-popup-media">
+                                                <img src="~/images/mic2.jpg" alt="" />
+                                                <span class="info">
+                                                    <span class="ion ion-images"></span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="desc">
+                                            <a href="#popup-2" class="name has-popup-media">موقع اجتماعي</a>
+                                            <div class="category">التصميم</div>
+                                        </div>
+                                        <div id="popup-2" class="popup-box mfp-fade mfp-hide">
+                                            <div class="content">
+                                                <div class="image">
+                                                    <img src="~/images/mic2.jpg" alt="">
+                                                </div>
+                                                <div class="desc">
+                                                    <div class="post-box">
+                                                        <h1>تطبيق المحمول</h1>
+                                                        <div class="blog-detail">التصميم</div>
+                                                        <div class="blog-content">
+                                                            <p>
+                                                                لذلك ضرب من لقيت حلها. شمالا عن طريق وصفها حتى المنزلية لذلك
+                                                                انتباه. التفوق بشكل حاسم حتى الآن رجل الانطباع لمنافسة بشكل ملحوظ.
+                                                            </p>
+                                                            <p>
+                                                                مصادرة كنت منكرة ولكن مثلي في بعض الأحيان شرح. آخر كما درسته للواضحة.
+                                                                بمعنى سعيد نظرا لأنه ينشأ. السلوك في اجابه ازالتها بين. متبق
+                                                                تحديد عدد قليل من اثنين اعترف القدامى.
+                                                            </p>
+                                                            <blockquote>
+                                                                دهش مزعج لحد من التحيز حتى التحيز. صاخبة من المقصود بهم. الموت يعني
+                                                                حتى المدني لا عرض الجرح.
+                                                            </blockquote>
+                                                            <p>
+                                                                يقول القرميد تفسد الآن الجدران يعني البيت. أفكاري اهتمام السيد فرزت من تفوق
+                                                                إزالة. مجتمع مسائي موسيقي بجانب ساكني. تفقد تلة جيدا انه سوف ينتهي.
+                                                                زيادة كل ما يكفي من الرجال له الإعجاب بالجنس غير المجدي.
+                                                            </p>
+                                                            <ul class="list-style">
+                                                                <li>أعظم بشكل صحيح قبالة ممارسة لحم الخنزير جميع.</li>
+                                                                <li>دعوة لا يمكن الاستغناء عن حيازتها أو خارجها.</li>
+                                                                <li>كل صعوبة في تقدير unreserved زيادة الحساسية.</li>
+                                                            </ul>
+                                                            <p>
+                                                                دهش مزعج لحد من التحيز حتى التحيز. صاخبة من المقصود بهم. الموت يعني
+                                                                حتى المدني لا عرض الجرح.
+                                                            </p>
+                                                        </div>
+                                                        <a href="#" class="button">
+                                                            <span class="text">عرض مشروع</span>
+                                                            <span class="arrow"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
+                                    <div class="box-item">
+                                        <div class="image">
+                                            <a href="#popup-2" class="has-popup-media">
+                                                <img src="~/images/mic3.jpg" alt="" />
+                                                <span class="info">
+                                                    <span class="ion ion-images"></span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="desc">
+                                            <a href="#popup-2" class="name has-popup-media">موقع اجتماعي</a>
+                                            <div class="category">التصميم</div>
+                                        </div>
+                                        <div id="popup-2" class="popup-box mfp-fade mfp-hide">
+                                            <div class="content">
+                                                <div class="image">
+                                                    <img src="~/images/mic3.jpg" alt="">
+                                                </div>
+                                                <div class="desc">
+                                                    <div class="post-box">
+                                                        <h1>تطبيق المحمول</h1>
+                                                        <div class="blog-detail">التصميم</div>
+                                                        <div class="blog-content">
+                                                            <p>
+                                                                لذلك ضرب من لقيت حلها. شمالا عن طريق وصفها حتى المنزلية لذلك
+                                                                انتباه. التفوق بشكل حاسم حتى الآن رجل الانطباع لمنافسة بشكل ملحوظ.
+                                                            </p>
+                                                            <p>
+                                                                مصادرة كنت منكرة ولكن مثلي في بعض الأحيان شرح. آخر كما درسته للواضحة.
+                                                                بمعنى سعيد نظرا لأنه ينشأ. السلوك في اجابه ازالتها بين. متبق
+                                                                تحديد عدد قليل من اثنين اعترف القدامى.
+                                                            </p>
+                                                            <blockquote>
+                                                                دهش مزعج لحد من التحيز حتى التحيز. صاخبة من المقصود بهم. الموت يعني
+                                                                حتى المدني لا عرض الجرح.
+                                                            </blockquote>
+                                                            <p>
+                                                                يقول القرميد تفسد الآن الجدران يعني البيت. أفكاري اهتمام السيد فرزت من تفوق
+                                                                إزالة. مجتمع مسائي موسيقي بجانب ساكني. تفقد تلة جيدا انه سوف ينتهي.
+                                                                زيادة كل ما يكفي من الرجال له الإعجاب بالجنس غير المجدي.
+                                                            </p>
+                                                            <ul class="list-style">
+                                                                <li>أعظم بشكل صحيح قبالة ممارسة لحم الخنزير جميع.</li>
+                                                                <li>دعوة لا يمكن الاستغناء عن حيازتها أو خارجها.</li>
+                                                                <li>كل صعوبة في تقدير unreserved زيادة الحساسية.</li>
+                                                            </ul>
+                                                            <p>
+                                                                دهش مزعج لحد من التحيز حتى التحيز. صاخبة من المقصود بهم. الموت يعني
+                                                                حتى المدني لا عرض الجرح.
+                                                            </p>
+                                                        </div>
+                                                        <a href="#" class="button">
+                                                            <span class="text">عرض مشروع</span>
+                                                            <span class="arrow"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
+                                    <div class="box-item">
+                                        <div class="image">
+                                            <a href="#popup-2" class="has-popup-media">
+                                                <img src="~/images/mic4.jpg" alt="" />
+                                                <span class="info">
+                                                    <span class="ion ion-images"></span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="desc">
+                                            <a href="#popup-2" class="name has-popup-media">موقع اجتماعي</a>
+                                            <div class="category">التصميم</div>
+                                        </div>
+                                        <div id="popup-2" class="popup-box mfp-fade mfp-hide">
+                                            <div class="content">
+                                                <div class="image">
+                                                    <img src="~/images/mic4.jpg" alt="">
+                                                </div>
+                                                <div class="desc">
+                                                    <div class="post-box">
+                                                        <h1>تطبيق المحمول</h1>
+                                                        <div class="blog-detail">التصميم</div>
+                                                        <div class="blog-content">
+                                                            <p>
+                                                                لذلك ضرب من لقيت حلها. شمالا عن طريق وصفها حتى المنزلية لذلك
+                                                                انتباه. التفوق بشكل حاسم حتى الآن رجل الانطباع لمنافسة بشكل ملحوظ.
+                                                            </p>
+                                                            <p>
+                                                                مصادرة كنت منكرة ولكن مثلي في بعض الأحيان شرح. آخر كما درسته للواضحة.
+                                                                بمعنى سعيد نظرا لأنه ينشأ. السلوك في اجابه ازالتها بين. متبق
+                                                                تحديد عدد قليل من اثنين اعترف القدامى.
+                                                            </p>
+                                                            <blockquote>
+                                                                دهش مزعج لحد من التحيز حتى التحيز. صاخبة من المقصود بهم. الموت يعني
+                                                                حتى المدني لا عرض الجرح.
+                                                            </blockquote>
+                                                            <p>
+                                                                يقول القرميد تفسد الآن الجدران يعني البيت. أفكاري اهتمام السيد فرزت من تفوق
+                                                                إزالة. مجتمع مسائي موسيقي بجانب ساكني. تفقد تلة جيدا انه سوف ينتهي.
+                                                                زيادة كل ما يكفي من الرجال له الإعجاب بالجنس غير المجدي.
+                                                            </p>
+                                                            <ul class="list-style">
+                                                                <li>أعظم بشكل صحيح قبالة ممارسة لحم الخنزير جميع.</li>
+                                                                <li>دعوة لا يمكن الاستغناء عن حيازتها أو خارجها.</li>
+                                                                <li>كل صعوبة في تقدير unreserved زيادة الحساسية.</li>
+                                                            </ul>
+                                                            <p>
+                                                                دهش مزعج لحد من التحيز حتى التحيز. صاخبة من المقصود بهم. الموت يعني
+                                                                حتى المدني لا عرض الجرح.
+                                                            </p>
+                                                        </div>
+                                                        <a href="#" class="button">
+                                                            <span class="text">عرض مشروع</span>
+                                                            <span class="arrow"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>*@
+
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!--
+                Card - Blog
+            -->
+            <!--<div class="card-inner blog" id="blog-card">
+                <div class="card-wrap">-->
+            <!--
+                Blog
+            -->
+            <!--<div class="content blog">-->
+            <!-- title -->
+            <!--<div class="title">آخر المشاركات</div>-->
+            <!-- content -->
+            <!--<div class="row border-line-v">-->
+            <!-- blog item -->
+            <!--<div class="col col-d-12 col-t-12 col-m-12 border-line-h">
+                <div class="box-item">
+                    <div class="image">
+                        <a href="blog-post-rtl.html">
+                            <img src="~/images/blog/blog1.jpg" alt="" />
+                            <span class="info">
+                                <span class="ion ion-document-text"></span>
+                            </span>
+                            <span class="date"><strong>20</strong>يونيو</span>
+                        </a>
+                    </div>
+                    <div class="desc">
+                        <a href="blog-post-rtl.html" class="name">على الرغم من القيام به من السماح أحمر الخدود</a>
+                        <div class="category">التصميم</div>
+                    </div>
+                </div>
+            </div>-->
+            <!-- blog item -->
+            <!--<div class="col col-d-12 col-t-12 col-m-12 border-line-h">
+                <div class="box-item">
+                    <div class="image">
+                        <a href="blog-post-rtl.html">
+                            <img src="~/images/blog/blog2.jpg" alt="" />
+                            <span class="info">
+                                <span class="ion ion-document-text"></span>
+                            </span>
+                            <span class="date"><strong>19</strong>يونيو</span>
+                        </a>
+                    </div>
+                    <div class="desc">
+                        <a href="blog-post-rtl.html" class="name">اثنان قبل السهم غير معتمد</a>
+                        <div class="category">الترميز</div>
+                    </div>
+                </div>
+            </div>-->
+            <!-- blog item -->
+            <!--<div class="col col-d-12 col-t-12 col-m-12 border-line-h">
+                                <div class="box-item">
+                                    <div class="image">
+                                        <a href="blog-post-rtl.html">
+                                            <img src="~/images/blog/blog3.jpg" alt="" />
+                                            <span class="info">
+                                                <span class="ion ion-document-text"></span>
+                                            </span>
+                                            <span class="date"><strong>20</strong>يونيو</span>
+                                        </a>
+                                    </div>
+                                    <div class="desc">
+                                        <a href="blog-post-rtl.html" class="name">على الرغم من القيام به من السماح أحمر الخدود</a>
+                                        <div class="category">السفر</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>-->
+            <!--
+                Card - Contacts
+            -->
+            <div class="card-inner contacts" id="contacts-card">
+                <div class="card-wrap">
+
+                    <!--
+                        Conacts Info
+                    -->
+                    <div class="content contacts">
+
+                        <!-- title -->
+                        <div class="title">ابقى على تواصل</div>
+
+                        <!-- content -->
+                        <div class="row">
+                            <div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+
+                                <div class="info-list">
+
+                                    <div>عنوان</div>
+                                    <br />
+                                    <div>القاهرة، مصر</div>
+                                    <br />
+                                    <div>البريد الإلكتروني</div>
+                                    <br />
+                                    <div>adlard@example.com</div>
+                                    <br />
+                                    <div>هاتف</div>
+                                    <br />
+                                    <div>+20155778111</div>
+
+
+
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>
+
+                    <!--
+                        Contact Form
+                    -->
+                    <div class="content contacts">
+
+                        <!-- title -->
+                        <div class="title">نموذج الاتصال</div>
+
+                        <!-- content -->
+                        <div class="row">
+                            <div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+                                <div class="contact_form">
+                                    <form enctype="multipart/form-data" asp-controller="Home" asp-action="ArabicIndex" role="form" method="post">
+                                        <div class="row">
+                                            <div class="col col-d-6 col-t-6 col-m-12">
+                                                <div class="group-val">
+                                                    <input type="text" name="name" placeholder="الاسم الكامل" />
+                                                </div>
+                                            </div>
+                                            <div class="col col-d-6 col-t-6 col-m-12">
+                                                <div class="group-val">
+                                                    <input type="text" name="email" placeholder="عنوان البريد الإلكتروني" />
+                                                </div>
+                                            </div>
+                                            <div class="col col-d-12 col-t-12 col-m-12">
+                                                <div class="group-val">
+                                                    <textarea name="message" placeholder="رسالتك" required></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col col-d-12 col-t-12 col-m-12">
+                                                <div class="group-val">
+                                                    <input class=" form-control" name="files" type="file" placeholder="Upload File">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type="submit" value="ارسل رسالة" class="btn btn-dark btn-modern w-100 text-uppercase bg-color-hover-primary border-color-hover-primary border-radius-0 text-3 py-3" />
+
+                                    </form>
+                                    <div class="alert-success">
+                                        <p>شكرا ، يتم إرسال رسالتك بنجاح.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--
+        jQuery Scripts
+    -->
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/jquery.validate.js"></script>
+    <script src="~/js/jquery.magnific-popup.js"></script>
+    <script src="~/js/imagesloaded.pkgd.js"></script>
+    <script src="~/js/isotope.pkgd.js"></script>
+    <script src="~/js/jquery.slimscroll.js"></script>
+    <script src="~/js/owl.carousel.js"></script>
+    <script src="~/js/typed.js"></script>
+    <script src="https://use.fontawesome.com/8da76d029b.js"></script>
+
+    <!--
+        Google map api
+    -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz2w7HUaWudHwd7AWQpCL48Qs050WOn9s"></script>
+
+    <!--
+        Main Scripts
+    -->
+    <script src="~/js/scripts.js"></script>
+    @*<script>
+        $(window).on('load resize', function () { //Fires when window is loaded or resized
+            var div1 = $('#myForm');
+            var div2 = $('#div2');
+            var wrapper = $('.wrapper');
+
+            if ($(window).width() < 600) {
+                $('#myForm').css({ position: 'absolute' });
+                $('#myForm').css({ left: 25 });
+                $('#myForm').css({ top: 40 });
+
+                $('#myForm').css({ width: 300 });
+            } else {
+                $('#myForm').css({ position: 'static' });
+                $('#myForm').css({ left: 'auto' });
+                $('#myForm').css({ top: 'auto' });
+
+                $('#myForm').css({ width: 'auto' });
+
+
+
+            }
+        });
+    </script>*@
+
+</body>
+</html>
